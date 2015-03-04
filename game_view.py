@@ -28,7 +28,6 @@ class GameView:
         print(self.state.instructions)
         print(self.state + '\n')
         
-        
         while self.state.possible_next_moves():
             if self.state.next_player == 'p1':
                 m = self.state.get_move()
@@ -55,7 +54,7 @@ class GameView:
             print('Congrats -- you won!!')
         else:
             print('We tied...')
-
+            
 
 if __name__ == '__main__':
     from subtract_square_state import SubtractSquareState
